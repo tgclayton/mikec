@@ -1,0 +1,77 @@
+:root {
+    --gutter: 12px;
+    --banner-color: white;
+    --brand-color: #610c11;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin : 0;
+    font-family: Montserrat, sans-serif;
+    background-color: #F1e8e7;
+}
+
+.banner {
+    background-color: var(--brand-color);
+    border-top: calc((var(--gutter) / 2)) solid black;
+    border-bottom: calc((var(--gutter) / 2)) solid black;
+    /* border-radius: 5px; */
+    width: 100% - 1px;
+    color: var(--banner-color);
+    height: 13%;
+    display:flex;
+    flex-direction: row;
+    font-size: large;
+    align-items: center;
+    /* margin: var(--gutter); */
+
+    nav{
+        width: 100%
+    }
+}
+
+.main-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    a {
+        color: var(--banner-color);
+        text-decoration: none;
+    }
+
+    :visited {
+        color: var(--banner-color);
+    }
+    
+    .nav-item{
+        display: flex;
+        list-style: none;
+    }
+}
+
+.logo {
+    margin-left: var(--gutter);
+}
+
+.gradient-border {
+  position: relative;
+  background: black; /* Fallback color */
+  padding: 20px; /* Adjust based on your needs */
+  color: white; /* Text color */
+  
+  /* Creating the gradient background */
+  background: linear-gradient(to bottom, black, #333); /* Adjust gradient as needed */
+  
+  /* Simulating the border */
+  box-shadow: inset 0 0 0 10px rgba(255,255,255,0.2); /* Adjust the color and size */
+  
+  /* Other styling */
+  margin: 20px;
+  text-align: center;
+}
